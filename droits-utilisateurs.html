@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Droits des utilisateurs — Partajoy ASBL</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .legal { padding: 140px 0 80px; background: var(--clr-bg); }
+        .legal__content { max-width: 800px; margin: 0 auto; }
+        .legal__content h1 { font-family: var(--font-heading); font-size: 2.2rem; color: var(--clr-dark); margin-bottom: 12px; }
+        .legal__content .legal__date { color: var(--clr-text-light); font-size: 0.9rem; margin-bottom: 40px; }
+        .legal__content h2 { font-family: var(--font-heading); font-size: 1.3rem; color: var(--clr-dark); margin-top: 32px; margin-bottom: 12px; }
+        .legal__content p { color: var(--clr-text-light); line-height: 1.8; margin-bottom: 16px; }
+        .legal__content ul { list-style: disc; padding-left: 24px; margin-bottom: 16px; }
+        .legal__content li { color: var(--clr-text-light); line-height: 1.8; margin-bottom: 4px; }
+        .legal__content a { color: var(--clr-secondary); text-decoration: underline; }
+        .legal__content a:hover { color: var(--clr-secondary-dark); }
+        .back-link { display: inline-flex; align-items: center; gap: 8px; margin-bottom: 32px; color: var(--clr-secondary); font-weight: 700; transition: color var(--transition); }
+        .back-link:hover { color: var(--clr-secondary-dark); }
+        .rights-card { background: var(--clr-bg-card); border: 1px solid var(--clr-border); border-radius: var(--radius-lg); padding: 28px; margin-bottom: 20px; }
+        .rights-card h3 { font-family: var(--font-heading); font-size: 1.1rem; color: var(--clr-dark); margin-bottom: 8px; }
+        .rights-card p { margin-bottom: 0; }
+    </style>
+</head>
+<body>
+    <header class="header scrolled">
+        <div class="container header__inner">
+            <a href="index.html" class="header__logo"><img src="img/logo-partajoy.png" alt="Partajoy" class="logo-img"></a>
+            <nav class="nav" id="nav">
+                <ul class="nav__list">
+                    <li><a href="index.html#accueil" class="nav__link">Accueil</a></li>
+                    <li><a href="index.html#mission" class="nav__link">Notre mission</a></li>
+                    <li><a href="index.html#plateformes" class="nav__link">Plateformes</a></li>
+                    <li><a href="index.html#activites" class="nav__link">Activités</a></li>
+                    <li><a href="index.html#contact" class="nav__link nav__link--btn">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="header__burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+        </div>
+    </header>
+
+    <main>
+        <section class="legal">
+            <div class="container">
+                <div class="legal__content">
+                    <a href="index.html" class="back-link">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5"/><polyline points="12 19 5 12 12 5"/></svg>
+                        Retour à l'accueil
+                    </a>
+                    <h1>Droits des utilisateurs</h1>
+                    <p class="legal__date">Dernière mise à jour : juillet 2026</p>
+
+                    <p>Conformément au Règlement Général sur la Protection des Données (RGPD - Règlement UE 2016/679) et à la loi belge du 30 juillet 2018, vous disposez de droits concernant vos données personnelles.</p>
+
+                    <h2>Vos droits</h2>
+
+                    <div class="rights-card">
+                        <h3>📋 Droit d'accès (Article 15 RGPD)</h3>
+                        <p>Vous avez le droit d'obtenir la confirmation que vos données personnelles sont traitées et d'en obtenir une copie.</p>
+                    </div>
+
+                    <div class="rights-card">
+                        <h3>✏️ Droit de rectification (Article 16 RGPD)</h3>
+                        <p>Vous pouvez demander la correction de vos données personnelles inexactes ou incomplètes.</p>
+                    </div>
+
+                    <div class="rights-card">
+                        <h3>🗑️ Droit à l'effacement (Article 17 RGPD)</h3>
+                        <p>Vous pouvez demander la suppression de vos données personnelles lorsque :</p>
+                        <ul>
+                            <li>Les données ne sont plus nécessaires pour les finalités pour lesquelles elles ont été collectées</li>
+                            <li>Vous retirez votre consentement</li>
+                            <li>Vous vous opposez au traitement</li>
+                            <li>Le traitement est illicite</li>
+                        </ul>
+                    </div>
+
+                    <div class="rights-card">
+                        <h3>⏸️ Droit à la limitation du traitement (Article 18 RGPD)</h3>
+                        <p>Vous pouvez demander la limitation du traitement de vos données dans certains cas (données inexactes, traitement illicite, etc.).</p>
+                    </div>
+
+                    <div class="rights-card">
+                        <h3>📦 Droit à la portabilité des données (Article 20 RGPD)</h3>
+                        <p>Vous avez le droit de recevoir vos données dans un format structuré, couramment utilisé et lisible par machine, et de les transmettre à un autre responsable du traitement.</p>
+                    </div>
+
+                    <div class="rights-card">
+                        <h3>🚫 Droit d'opposition (Article 21 RGPD)</h3>
+                        <p>Vous pouvez vous opposer au traitement de vos données à des fins de prospection ou pour des motifs légitimes.</p>
+                    </div>
+
+                    <div class="rights-card">
+                        <h3>🤖 Décision automatisée (Article 22 RGPD)</h3>
+                        <p>Vous ne faites l'objet d'aucune décision automatisée produisant des effets juridiques ou significatifs via notre site.</p>
+                    </div>
+
+                    <h2>Comment exercer vos droits ?</h2>
+                    <p>Pour exercer l'un de ces droits, envoyez une demande à :</p>
+                    <p>
+                        <strong>Email :</strong> <a href="mailto:asbl.partajoy@gmail.com">asbl.partajoy@gmail.com</a><br>
+                        <strong>Adresse postale :</strong> ASBL Partajoy, Rue des Coteaux, 1030 Schaerbeek, Belgique
+                    </p>
+                    <p>Votre demande sera traitée dans un délai d'un mois. Une pièce d'identité pourra vous être demandée pour vérification.</p>
+
+                    <h2>Droit de réclamation</h2>
+                    <p>Si vous estimez que le traitement de vos données n'est pas conforme au RGPD, vous avez le droit d'introduire une réclamation auprès de l'Autorité de protection des données :</p>
+                    <p>
+                        <strong>Autorité de protection des données (APD)</strong><br>
+                        Rue de la Presse, 35<br>
+                        1000 Bruxelles, Belgique<br>
+                        <a href="https://www.autoriteprotectiondonnees.be" target="_blank" rel="noopener noreferrer">www.autoriteprotectiondonnees.be</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__bottom">
+                <p>&copy; 2026 Partajoy ASBL — Tous droits réservés</p>
+                <p>N'entreprise : 1030 288 765</p>
+                <div class="footer__legal">
+                    <a href="mentions-legales.html">Mentions légales</a>
+                    <a href="politique-de-confidentialite.html">Politique de confidentialité</a>
+                    <a href="politique-de-cookies.html">Politique de cookies</a>
+                    <a href="conditions-utilisation.html">Conditions d'utilisation</a>
+                    <a href="droits-utilisateurs.html">Droits des utilisateurs</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
