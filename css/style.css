@@ -895,6 +895,16 @@ ul {
     font-size: 0.95rem;
 }
 
+.contact-info__card a {
+    color: var(--clr-text-light);
+    font-size: 0.95rem;
+    transition: color var(--transition);
+}
+
+.contact-info__card a:hover {
+    color: var(--clr-secondary);
+}
+
 .social-links {
     display: flex;
     gap: 12px;
