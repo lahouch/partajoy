@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regards — Édition Amazigh | Partajoy ASBL</title>
+    <meta name="description" content="Regards — Édition Amazigh : Ciné-Club & Exposition Photo. 14 Janvier 2027 au Centre Culturel Le Ska, 1030 Schaerbeek.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .event-hero {
+            position: relative;
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #1A1A1A 0%, #2a2a2a 50%, #C45C3E 100%);
+            overflow: hidden;
+        }
+        .event-hero__pattern {
+            position: absolute;
+            inset: 0;
+            background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M20 20.5V18H0v-2h20v-2H0v-2h20v-2H0V8h20V6H0V4h20V2H0V0h22v20.5h-2zM0 20h2v20H0V20zm4 0h2v20H4V20zm8 0h2v20h-2V20zm8 0h2v20h-2V20zm8 0h2v20h-2V20zm8 4h-40v2h40v-2zm0 8h-40v2h40v-2zm0 8h-40v2h40v-2zm0 8h-40v2h40v-2z'/%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.5;
+        }
+        .event-hero__content {
+            position: relative;
+            text-align: center;
+            max-width: 900px;
+            padding: 120px 24px 80px;
+        }
+        .event-hero__asbl {
+            font-size: 0.9rem;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: #F5E6D3;
+            opacity: 0.7;
+            margin-bottom: 24px;
+        }
+        .event-hero__title {
+            font-family: var(--font-heading);
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            color: #ffffff;
+            font-weight: 800;
+            letter-spacing: 2px;
+            margin-bottom: 16px;
+            line-height: 1.1;
+        }
+        .event-hero__subtitle {
+            font-size: 1.3rem;
+            color: #F5E6D3;
+            opacity: 0.9;
+            margin-bottom: 8px;
+        }
+        .event-hero__edition {
+            font-size: 1rem;
+            color: #F5E6D3;
+            opacity: 0.6;
+            margin-bottom: 32px;
+        }
+        .event-hero__line {
+            width: 80px;
+            height: 3px;
+            background: #C45C3E;
+            margin: 0 auto 32px;
+        }
+        .event-hero__date-box {
+            display: inline-block;
+            background: #C45C3E;
+            padding: 16px 40px;
+            border-radius: 6px;
+            margin-bottom: 24px;
+        }
+        .event-hero__date {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #ffffff;
+            letter-spacing: 2px;
+        }
+        .event-hero__time {
+            font-size: 1rem;
+            color: rgba(255,255,255,0.9);
+        }
+        .event-hero__location {
+            font-size: 1.1rem;
+            color: #ffffff;
+            margin-bottom: 4px;
+        }
+        .event-hero__address {
+            font-size: 0.95rem;
+            color: #F5E6D3;
+            opacity: 0.7;
+        }
+        .event-hero__free {
+            display: inline-block;
+            margin-top: 24px;
+            padding: 8px 24px;
+            border: 2px solid #6B7C4E;
+            border-radius: 20px;
+            color: #6B7C4E;
+            font-weight: 700;
+            font-size: 0.85rem;
+            letter-spacing: 2px;
+        }
+
+        .event-section {
+            padding: 80px 0;
+        }
+        .event-section--dark {
+            background: var(--clr-dark);
+            color: var(--clr-white);
+        }
+        .event-section--warm {
+            background: #fdf6ee;
+        }
+        .event-section__header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+        .event-section__tag {
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #C45C3E;
+            margin-bottom: 8px;
+        }
+        .event-section__title {
+            font-family: var(--font-heading);
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+            color: var(--clr-dark);
+        }
+        .event-section--dark .event-section__title {
+            color: var(--clr-white);
+        }
+        .event-section--dark .event-section__tag {
+            color: #F5E6D3;
+        }
+
+        .mission-box {
+            background: linear-gradient(135deg, #F5E6D3 0%, #FFF8F0 100%);
+            border: 2px solid #C45C3E;
+            border-radius: 12px;
+            padding: 28px 32px;
+            max-width: 800px;
+            margin: 0 auto;
+            font-style: italic;
+            font-size: 1.1rem;
+            text-align: center;
+            color: var(--clr-dark);
+            line-height: 1.8;
+        }
+
+        .timeline {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .timeline__item {
+            display: flex;
+            gap: 20px;
+            padding: 16px 0;
+            border-bottom: 1px dotted #ddd;
+        }
+        .timeline__time {
+            min-width: 70px;
+            font-weight: 800;
+            color: #C45C3E;
+            font-size: 1.1rem;
+        }
+        .timeline__content h4 {
+            font-size: 1.05rem;
+            color: var(--clr-dark);
+            margin-bottom: 4px;
+        }
+        .timeline__content p {
+            color: var(--clr-text-light);
+            font-size: 0.95rem;
+        }
+
+        .expo-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            max-width: 600px;
+            margin: 32px auto;
+        }
+        .expo-card {
+            background: #F5E6D3;
+            border-radius: 12px;
+            padding: 24px;
+            text-align: center;
+        }
+        .expo-card__number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #C45C3E;
+        }
+        .expo-card__label {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #6B7C4E;
+            font-weight: 700;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .info-card {
+            background: rgba(255,255,255,0.05);
+            border-radius: 12px;
+            padding: 24px;
+            border-left: 4px solid #6B7C4E;
+        }
+        .info-card__label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #6B7C4E;
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+        .info-card__value {
+            font-size: 1rem;
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        .transport-list {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .transport-item {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 12px 0;
+        }
+        .transport-icon {
+            width: 36px;
+            height: 36px;
+            background: #C45C3E;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.85rem;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+        .transport-text strong {
+            color: var(--clr-dark);
+        }
+
+        .sponsor-table {
+            width: 100%;
+            border-collapse: collapse;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .sponsor-table th {
+            background: var(--clr-dark);
+            color: white;
+            padding: 16px;
+            text-align: left;
+            font-weight: 600;
+        }
+        .sponsor-table td {
+            padding: 16px;
+            border-bottom: 1px solid #eee;
+            vertical-align: top;
+        }
+        .sponsor-table tr:nth-child(even) {
+            background: #fdf6ee;
+        }
+        .sponsor-table .amount {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: #C45C3E;
+        }
+        .benefits {
+            list-style: none;
+            padding: 0;
+        }
+        .benefits li {
+            padding: 4px 0 4px 24px;
+            position: relative;
+            color: var(--clr-text-light);
+        }
+        .benefits li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #6B7C4E;
+            font-weight: bold;
+        }
+
+        .contact-box {
+            background: var(--clr-dark);
+            color: white;
+            border-radius: 12px;
+            padding: 32px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .contact-box h3 {
+            color: #F5E6D3;
+            margin-bottom: 16px;
+        }
+        .contact-box p {
+            color: #ccc;
+            margin-bottom: 8px;
+        }
+        .contact-box .highlight {
+            color: #C45C3E;
+            font-weight: 600;
+        }
+
+        .poster-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .poster-section img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+        }
+        .poster-text h3 {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            color: var(--clr-dark);
+            margin-bottom: 12px;
+        }
+        .poster-text p {
+            color: var(--clr-text-light);
+            line-height: 1.8;
+        }
+
+        @media (max-width: 768px) {
+            .poster-section {
+                grid-template-columns: 1fr;
+            }
+            .expo-grid {
+                grid-template-columns: 1fr;
+            }
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header scrolled">
+        <div class="container header__inner">
+            <a href="index.html" class="header__logo"><img src="img/logo-partajoy.png" alt="Partajoy" class="logo-img"></a>
+            <nav class="nav" id="nav">
+                <ul class="nav__list">
+                    <li><a href="index.html#accueil" class="nav__link">Accueil</a></li>
+                    <li><a href="index.html#mission" class="nav__link">Notre mission</a></li>
+                    <li><a href="index.html#plateformes" class="nav__link">Plateformes</a></li>
+                    <li><a href="index.html#activites" class="nav__link">Activités</a></li>
+                    <li><a href="index.html#contact" class="nav__link nav__link--btn">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="header__burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+        <section class="event-hero">
+            <div class="event-hero__pattern"></div>
+            <div class="event-hero__content">
+                <p class="event-hero__asbl">ASBL PARTAJOY présente</p>
+                <h1 class="event-hero__title">REGARDS<br>— ÉDITION AMAZIGH</h1>
+                <div class="event-hero__line"></div>
+                <p class="event-hero__subtitle">Ciné-Club & Exposition Photo</p>
+                <p class="event-hero__edition">1ère édition d'une série culturelle itinérante</p>
+                <div class="event-hero__date-box">
+                    <div class="event-hero__date">14 JANVIER 2027</div>
+                    <div class="event-hero__time">16h - 20h</div>
+                </div>
+                <p class="event-hero__location">Centre Culturel Le Ska</p>
+                <p class="event-hero__address">Rue des Coteaux, 1030 Schaerbeek</p>
+                <div class="event-hero__free">ENTRÉE LIBRE</div>
+            </div>
+        </section>
+
+        <!-- PRÉSENTATION -->
+        <section class="event-section">
+            <div class="container">
+                <div class="event-section__header">
+                    <p class="event-section__tag">À propos</p>
+                    <h2 class="event-section__title">L'événement</h2>
+                </div>
+                <div class="mission-box">
+                    "Faire découvrir les cultures d'origine des habitants de la commune<br>à tous les citoyens de Schaerbeek — Cette édition explore la culture amazigh"
+                </div>
+                <p style="text-align: center; margin-top: 24px; color: var(--clr-text-light); max-width: 700px; margin-left: auto; margin-right: auto; line-height: 1.8;">
+                    Le <strong>14 janvier 2027</strong>, l'ASBL PARTAJOY organise <strong>"Regards — Édition Amazigh"</strong>, première édition d'une série culturelle itinérante au Centre Culturel Le Ska à Schaerbeek. Cette édition explore la culture amazigh, présente depuis plusieurs décennies en Belgique, à travers le cinéma et la photographie.
+                </p>
+            </div>
+        </section>
+
+        <!-- AFFICHE -->
+        <section class="event-section event-section--warm">
+            <div class="container">
+                <div class="poster-section">
+                    <img src="img/affiche-regards-amazigh.svg" alt="Affiche Regards — Édition Amazigh">
+                    <div class="poster-text">
+                        <h3>Affiche officielle</h3>
+                        <p>Découvrez l'affiche de notre première édition culturelle. Un design inspiré des motifs amazigh avec les couleurs terracotta et crème qui évoquent la chaleur de cette culture millénaire.</p>
+                        <p style="margin-top: 16px;">Partagez l'événement avec vos amis et votre réseau pour nous aider à rassembler le plus grand nombre !</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROGRAMME -->
+        <section class="event-section">
+            <div class="container">
+                <div class="event-section__header">
+                    <p class="event-section__tag">Programme</p>
+                    <h2 class="event-section__title">Déroulement de la soirée</h2>
+                </div>
+                <div class="timeline">
+                    <div class="timeline__item">
+                        <span class="timeline__time">16h00</span>
+                        <div class="timeline__content">
+                            <h4>Ouverture des portes</h4>
+                            <p>Accueil & installation</p>
+                        </div>
+                    </div>
+                    <div class="timeline__item">
+                        <span class="timeline__time">16h30</span>
+                        <div class="timeline__content">
+                            <h4>Mot de bienvenue</h4>
+                            <p>Présentation de l'événement par l'ASBL PARTAJOY</p>
+                        </div>
+                    </div>
+                    <div class="timeline__item">
+                        <span class="timeline__time">16h45</span>
+                        <div class="timeline__content">
+                            <h4>Séance Courts-Métrages</h4>
+                            <p>Projection de films amazigh de 5 à 15 minutes</p>
+                        </div>
+                    </div>
+                    <div class="timeline__item">
+                        <span class="timeline__time">17h30</span>
+                        <div class="timeline__content">
+                            <h4>Pause</h4>
+                            <p>Visite de l'exposition photo & refreshments</p>
+                        </div>
+                    </div>
+                    <div class="timeline__item">
+                        <span class="timeline__time">18h00</span>
+                        <div class="timeline__content">
+                            <h4>Séance Moyens-Métrages</h4>
+                            <p>Projection de films amazigh de 15 à 30 minutes</p>
+                        </div>
+                    </div>
+                    <div class="timeline__item">
+                        <span class="timeline__time">19h00</span>
+                        <div class="timeline__content">
+                            <h4>Table ronde</h4>
+                            <p>Discussion avec les réalisateurs et artistes</p>
+                        </div>
+                    </div>
+                    <div class="timeline__item">
+                        <span class="timeline__time">19h30</span>
+                        <div class="timeline__content">
+                            <h4>Verre de l'amitié</h4>
+                            <p>Échange et networking autour d'un verre</p>
+                        </div>
+                    </div>
+                    <div class="timeline__item">
+                        <span class="timeline__time">20h00</span>
+                        <div class="timeline__content">
+                            <h4>Fermeture</h4>
+                            <p>Fin de la soirée</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPOSITION -->
+        <section class="event-section event-section--warm">
+            <div class="container">
+                <div class="event-section__header">
+                    <p class="event-section__tag">Exposition</p>
+                    <h2 class="event-section__title">Photographies Vintage Amazigh</h2>
+                </div>
+                <div class="expo-grid">
+                    <div class="expo-card">
+                        <div class="expo-card__number">20-40</div>
+                        <div class="expo-card__label">Photographies</div>
+                    </div>
+                    <div class="expo-card">
+                        <div class="expo-card__number">Vintage</div>
+                        <div class="expo-card__label">Amazigh</div>
+                    </div>
+                </div>
+                <p style="text-align: center; color: var(--clr-text-light); max-width: 600px; margin: 0 auto; line-height: 1.8;">
+                    Un voyage visuel à travers les paysages, les traditions et les visages de la culture berbère. Découvrez des clichés rares témoins de la richesse du patrimoine amazigh.
+                </p>
+            </div>
+        </section>
+
+        <!-- PUBLIC CIBLE -->
+        <section class="event-section event-section--dark">
+            <div class="container">
+                <div class="event-section__header">
+                    <p class="event-section__tag">Public</p>
+                    <h2 class="event-section__title">Un événement pour tous</h2>
+                </div>
+                <div class="info-grid">
+                    <div class="info-card">
+                        <div class="info-card__label">Cible prioritaire</div>
+                        <div class="info-card__value">Citoyens de Schaerbeek (toutes origines)</div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-card__label">Cible secondaire</div>
+                        <div class="info-card__value">Communauté amazigh de Belgique</div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-card__label">Cible tertiaire</div>
+                        <div class="info-card__value">Amateurs de cinéma et culture</div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-card__label">Public estimé</div>
+                        <div class="info-card__value">100 - 150 personnes</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- INFOS PRATIQUES -->
+        <section class="event-section">
+            <div class="container">
+                <div class="event-section__header">
+                    <p class="event-section__tag">Infos pratiques</p>
+                    <h2 class="event-section__title">Comment venir ?</h2>
+                </div>
+                <div class="transport-list">
+                    <div class="transport-item">
+                        <div class="transport-icon">📍</div>
+                        <div class="transport-text">
+                            <strong>Lieu :</strong> Centre Culturel Le Ska<br>
+                            <span style="color: var(--clr-text-light);">Rue des Coteaux, 1030 Schaerbeek, Belgique</span>
+                        </div>
+                    </div>
+                    <div class="transport-item">
+                        <div class="transport-icon">🚇</div>
+                        <div class="transport-text">
+                            <strong>Métro :</strong> Station Botanique - Ligne 5 ou 6
+                        </div>
+                    </div>
+                    <div class="transport-item">
+                        <div class="transport-icon">🚊</div>
+                        <div class="transport-text">
+                            <strong>Tram :</strong> Arrêt Defacqz - Ligne 92 ou 93
+                        </div>
+                    </div>
+                    <div class="transport-item">
+                        <div class="transport-icon">🚌</div>
+                        <div class="transport-text">
+                            <strong>Bus :</strong> Ligne 27 - Arrêt Squats du Coteau
+                        </div>
+                    </div>
+                    <div class="transport-item">
+                        <div class="transport-icon">🅿️</div>
+                        <div class="transport-text">
+                            <strong>Parking :</strong> Places de stationnement dans les rues avoisinantes
+                        </div>
+                    </div>
+                </div>
+                <div style="text-align: center; margin-top: 32px; padding: 20px; background: #fdf6ee; border-radius: 12px; max-width: 500px; margin-left: auto; margin-right: auto;">
+                    <p style="color: var(--clr-dark); margin-bottom: 4px;"><strong>Entrée :</strong> Libre / Gratuit</p>
+                    <p style="color: var(--clr-text-light); margin-bottom: 4px;">Réservation recommandée (places limitées)</p>
+                    <p style="color: var(--clr-text-light);">Contact : <a href="mailto:asbl.partajoy@gmail.com" style="color: #C45C3E;">asbl.partajoy@gmail.com</a> | <a href="tel:+32485160681" style="color: #C45C3E;">+32 485 16 06 81</a></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SPONSORING -->
+        <section class="event-section event-section--warm">
+            <div class="container">
+                <div class="event-section__header">
+                    <p class="event-section__tag">Partenariat</p>
+                    <h2 class="event-section__title">Devenez partenaire</h2>
+                </div>
+                <p style="text-align: center; color: var(--clr-text-light); max-width: 700px; margin: 0 auto 32px; line-height: 1.8;">
+                    Soutenez l'ASBL PARTAJOY et participez à la réussite de <strong>"Regards — Édition Amazigh"</strong>. Trois formules s'offrent à vous :
+                </p>
+                <table class="sponsor-table">
+                    <thead>
+                        <tr>
+                            <th>Niveau</th>
+                            <th>Montant</th>
+                            <th>Prestations incluses</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>🥉 BRONZE</strong></td>
+                            <td class="amount">500 €</td>
+                            <td>
+                                <ul class="benefits">
+                                    <li>Logo sur l'affiche de l'événement</li>
+                                    <li>Mention sur les publications réseaux sociaux</li>
+                                    <li>Logo dans le fascicule de l'événement</li>
+                                    <li>2 places gratuites</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>🥈 ARGENT</strong></td>
+                            <td class="amount">1 500 €</td>
+                            <td>
+                                <ul class="benefits">
+                                    <li>Toutes les prestations Bronze</li>
+                                    <li>Logo projeté sur écran pendant la soirée</li>
+                                    <li>Place VIP (rangée avant + accueil spécial)</li>
+                                    <li>Stand d'information pour votre structure</li>
+                                    <li>5 places gratuites</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>🥇 OR</strong></td>
+                            <td class="amount">3 000 €</td>
+                            <td>
+                                <ul class="benefits">
+                                    <li>Toutes les prestations Argent</li>
+                                    <li>Discours de remerciement sur scène</li>
+                                    <li>Vidéo de remerciement diffusée en salle</li>
+                                    <li>Espace branding dédié en entrée</li>
+                                    <li>10 places gratuites</li>
+                                    <li>Couverture presse</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p style="text-align: center; margin-top: 24px; color: var(--clr-text-light);">
+                    Vous souhaitez contribuer en services ou matériel ? Nous sommes ouverts aux collaborations en nature : traiteur, matériel audiovisuel, impression, etc.
+                </p>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="event-section">
+            <div class="container">
+                <div class="event-section__header">
+                    <p class="event-section__tag">Contact</p>
+                    <h2 class="event-section__title">Restons en contact</h2>
+                </div>
+                <div class="contact-box">
+                    <h3>ASBL PARTAJOY</h3>
+                    <p><span class="highlight">Adresse :</span> Rue des Coteaux, 1030 Schaerbeek, Belgique</p>
+                    <p><span class="highlight">Email :</span> <a href="mailto:asbl.partajoy@gmail.com" style="color: #C45C3E;">asbl.partajoy@gmail.com</a></p>
+                    <p><span class="highlight">Téléphone :</span> <a href="tel:+32485160681" style="color: #C45C3E;">+32 485 16 06 81</a></p>
+                    <p><span class="highlight">Site web :</span> <a href="https://lahouch.github.io/partajoy/" style="color: #C45C3E;">lahouch.github.io/partajoy</a></p>
+                    <p><span class="highlight">Facebook :</span> <a href="https://www.facebook.com/profile.php?id=61579099593860" target="_blank" style="color: #C45C3E;">Partajoy ASBL</a></p>
+                    <p><span class="highlight">Instagram :</span> <a href="https://www.instagram.com/partajoy.asbl/" target="_blank" style="color: #C45C3E;">@partajoy.asbl</a></p>
+                    <p><span class="highlight">N'entreprise :</span> 1030 288 765</p>
+                </div>
+                <p style="text-align: center; margin-top: 32px; font-style: italic; color: #C45C3E; font-size: 1.1rem;">
+                    "Ensemble, offrons à Schaerbeek un nouveau regard sur les cultures du monde"
+                </p>
+                <div style="text-align: center; margin-top: 24px;">
+                    <a href="index.html#evenements" style="display: inline-flex; align-items: center; gap: 8px; color: var(--clr-secondary); font-weight: 700; text-decoration: none;">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5"/><polyline points="12 19 5 12 12 5"/></svg>
+                        Retour aux événements
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__bottom">
+                <p>&copy; 2026 Partajoy ASBL — Tous droits réservés</p>
+                <p>N'entreprise : 1030 288 765</p>
+                <div class="footer__legal">
+                    <a href="mentions-legales.html">Mentions légales</a>
+                    <a href="politique-de-confidentialite.html">Politique de confidentialité</a>
+                    <a href="politique-de-cookies.html">Politique de cookies</a>
+                    <a href="conditions-utilisation.html">Conditions d'utilisation</a>
+                    <a href="droits-utilisateurs.html">Droits des utilisateurs</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

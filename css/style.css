@@ -752,6 +752,33 @@ ul {
     margin-top: 8px;
 }
 
+.event-card--link {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.event-card--link:hover {
+    transform: translateY(-4px);
+}
+
+.event-card__cta {
+    display: inline-block;
+    margin-top: 16px;
+    padding: 10px 20px;
+    background: var(--clr-primary);
+    color: var(--clr-white);
+    border-radius: var(--radius-xl);
+    font-weight: 700;
+    font-size: 0.9rem;
+    transition: all var(--transition);
+}
+
+.event-card--link:hover .event-card__cta {
+    background: var(--clr-primary-dark);
+    box-shadow: 0 4px 12px rgba(232,124,62,0.3);
+}
+
 /* ---------- À propos ---------- */
 .a-propos {
     padding: 100px 0;
