@@ -705,6 +705,35 @@ ul {
     border-radius: var(--radius-xl);
 }
 
+.event-card__tag--free {
+    color: var(--clr-secondary);
+    background: rgba(0,168,212,0.15);
+}
+
+.event-card--featured {
+    border: 2px solid var(--clr-primary);
+    background: linear-gradient(135deg, rgba(232,124,62,0.03) 0%, rgba(255,255,255,1) 100%);
+}
+
+.event-card--featured:hover {
+    border-color: var(--clr-primary);
+    box-shadow: 0 8px 32px rgba(232,124,62,0.15);
+}
+
+.event-card__day {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.event-card__details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 8px;
+}
+
 /* ---------- À propos ---------- */
 .a-propos {
     padding: 100px 0;
