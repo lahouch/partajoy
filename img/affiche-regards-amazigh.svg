@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 595 842" width="595" height="842">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A1A1A"/>
+      <stop offset="50%" style="stop-color:#2a2a2a"/>
+      <stop offset="100%" style="stop-color:#C45C3E"/>
+    </linearGradient>
+    <pattern id="pattern" patternUnits="userSpaceOnUse" width="40" height="40">
+      <path d="M20 20.5V18H0v-2h20v-2H0v-2h20v-2H0V8h20V6H0V4h20V2H0V0h22v20.5h-2zM0 20h2v20H0V20zm4 0h2v20H4V20zm4 0h2v20H8V20zm4 0h2v20h-2V20zm4 0h2v20h-2V20zm4 4h20v2H20v-2zm0 4h20v2H20v-2zm0 4h20v2H20v-2zm0 4h20v2H20v-2zm0 4h20v2H20v-2z" fill="#ffffff" fill-opacity="0.04"/>
+    </pattern>
+  </defs>
+
+  <rect width="595" height="842" fill="url(#bg)"/>
+  <rect width="595" height="842" fill="url(#pattern)"/>
+
+  <g transform="translate(297, 80)" opacity="0.3">
+    <path d="M0,-40 L10,-20 L30,-20 L15,-5 L20,15 L0,10 L-20,15 L-15,-5 L-30,-20 L-10,-20 Z" fill="#F5E6D3" stroke="#C45C3E" stroke-width="1"/>
+    <circle cx="0" cy="0" r="8" fill="#C45C3E"/>
+  </g>
+
+  <text x="297" y="160" text-anchor="middle" fill="#F5E6D3" font-size="12" font-family="'Segoe UI', sans-serif" letter-spacing="4" opacity="0.8" font-weight="300">ASBL PARTAJOY PRÉSENTE</text>
+
+  <text x="297" y="320" text-anchor="middle" fill="#ffffff" font-size="72" font-family="'Segoe UI', sans-serif" font-weight="200" letter-spacing="3">REGARDS</text>
+  <text x="297" y="400" text-anchor="middle" fill="#ffffff" font-size="72" font-family="'Segoe UI', sans-serif" font-weight="200" letter-spacing="3">— ÉDITION AMAZIGH</text>
+
+  <line x1="200" y1="430" x2="395" y2="430" stroke="#C45C3E" stroke-width="2"/>
+
+  <text x="297" y="470" text-anchor="middle" fill="#F5E6D3" font-size="18" font-family="'Segoe UI', sans-serif" font-weight="300" opacity="0.9">Ciné-Club &amp; Exposition Photo</text>
+  <text x="297" y="500" text-anchor="middle" fill="#F5E6D3" font-size="14" font-family="'Segoe UI', sans-serif" font-weight="300" opacity="0.7">1ère édition d'une série culturelle itinérante</text>
+
+  <rect x="170" y="540" width="255" height="60" rx="4" fill="#C45C3E" opacity="0.9"/>
+  <text x="297" y="568" text-anchor="middle" fill="#ffffff" font-size="14" font-family="'Segoe UI', sans-serif" font-weight="600" letter-spacing="2">14 JANVIER 2027</text>
+  <text x="297" y="590" text-anchor="middle" fill="#ffffff" font-size="12" font-family="'Segoe UI', sans-serif" font-weight="300" opacity="0.9">16h - 20h</text>
+
+  <text x="297" y="650" text-anchor="middle" fill="#ffffff" font-size="16" font-family="'Segoe UI', sans-serif" font-weight="400">Centre Culturel Le Ska</text>
+  <text x="297" y="675" text-anchor="middle" fill="#F5E6D3" font-size="12" font-family="'Segoe UI', sans-serif" font-weight="300" opacity="0.7">1030 Schaerbeek</text>
+
+  <g transform="translate(297, 740)" opacity="0.4">
+    <path d="M0,-25 L7,-12 L20,-12 L10,-3 L13,10 L0,4 L-13,10 L-10,-3 L-20,-12 L-7,-12 Z" fill="none" stroke="#F5E6D3" stroke-width="1"/>
+  </g>
+
+  <text x="297" y="800" text-anchor="middle" fill="#6B7C4E" font-size="11" font-family="'Segoe UI', sans-serif" font-weight="600" letter-spacing="2">ENTRÉE LIBRE</text>
+</svg>
